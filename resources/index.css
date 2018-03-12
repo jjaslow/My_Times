@@ -1,0 +1,61 @@
+.header {
+  display: flex;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  justify-content: space-between;
+}
+
+.logo,
+.nav {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo img {
+  padding: 10px 20px;
+}
+
+.header h1 {
+  color: MediumAquamarine;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  align-items: center;
+}
+
+.navbar {
+  display: inline-flex;
+  align-items: center;
+}
+
+.navbar a {
+  color: black;
+  padding-right: 30px;
+}
+
+.main {
+  display: inline-flex;
+  border: 3px dotted black;
+}
+
+.column {
+  display: inline-flex;
+  border: 3px dotted green;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.column.large {
+  width: 630px;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+}
