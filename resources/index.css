@@ -78,18 +78,26 @@
 
 .phish {
   background-image: url('img-story-main.png');
+  width: 629px;
+  height: 300px;
 }
 
 .earth {
   background-image: url('img-story-2.png');
+  width: 299px;
+  height: 300px;
 }
 
 .camera {
   background-image: url('img-story-3.png');
+  width: 299px;
+  height: 300px;
 }
 
 .cat {
   background-image: url('img-story-1.png');
+  width: 299px;
+  height: 300px;
 }
 
 .image h1 {
