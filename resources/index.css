@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -27,6 +29,10 @@ body {
   padding: 2px 20px;
 }
 
+h1 {
+  margin-top: 0;
+}
+
 .header h1 {
   color: MediumAquamarine;
   font-family: Verdana;
@@ -48,36 +54,51 @@ body {
 
 .main {
   display: inline-flex;
-  border: 3px dotted black;
+  /* border: 3px dotted black; */
   position: relative;
-  top: 65px;
+  top: 85px;
+  margin: 0 auto;
 }
 
 .column {
-  display: inline-flex;
-  border: 3px dotted green;
+  /* border: 3px dotted green; */
   flex-direction: row;
-  margin: 10px;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: stretch;
   align-content: flex-start;
+}
+
+.sub_nowrap {
+  flex-wrap: nowrap;
+  width: 629px;
+}
+
+.sub_nowrap .article {
+  width: 300px;
+  min-height: 300px;
 }
 
 .large {
   width: 630px;
+  margin-left: 10px;
 }
 
 .medium {
   width: 300px;
+  margin: 0px 40px;
 }
 
 .small {
   width: 240px;
+  margin-right: 10px;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .article {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .article p {
@@ -88,6 +109,7 @@ body {
 
 .image {
   display: flex;
+  align-items: center;
 }
 
 .phish {
@@ -120,8 +142,60 @@ body {
   font-size: 30px;
   color: white;
   margin: 0px;
+  text-align: center;
 }
 
 .headline h1 {
   font-size: 40px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.column h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.small p {
+  padding-bottom: 10px;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  border-bottom: 1px solid black;
+}
+.footer {
+  position: relative;
+  top: 85px;
+  background-color: MediumAquamarine;
+  margin: 0;
+  margin-top: 60px;
+  font-family: Verdana;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 30px;
+  flex-direction: column;
+}
+
+.footer2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer h3 {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-right: 3px solid white;
+  margin-right: 30px;
+  padding-right: 30px;
+  flex-wrap: wrap;
+}
+
+.footer p {
+  margin-right: 10px;
 }
